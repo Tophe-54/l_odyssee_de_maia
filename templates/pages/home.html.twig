@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+{% endblock %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<!-- Reste de la page -->
+<div class="container">
+    <div class="row my-5">
+        <div class="col">
+            <h1 class="text-white display-4">Bienvenue sur L'Odyssée de Maïa !</h1>
+        </div>
+    </div>
+    <div class="row pb-5">
+        <div class="col">
+            <div class="card-deck">
+                <div class="card black-50 text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">A propos</h5>
+                        <p class="card-text">Qui je suis ? Qu'est-ce que la Thalasso Bain Bébé ? Toutes les réponses ici.</p>
+                        <a class="btn btn-primary" href="{{ path('a_propos') }}">Accéder</a>
+                    </div>
+                </div>
+                <div class="card black-50 text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Photos</h5>
+                        <p class="card-text">Découvrez la réalisation des bains à travers quelques albums photos !</p>
+                        <button type="button" class="btn btn-primary">Accéder</button>
+                    </div>
+                </div>
+                <div class="card black-50 text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact</h5>
+                        <p class="card-text">Une question ? Besoin d'un renseignement complémentaire ? Accédez au formulaire de contact pour me transmettre votre demande.</p>
+                        <button type="button" class="btn btn-primary">Accéder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
+

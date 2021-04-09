@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Albums{% endblock %}
+
+{% block body %}
+<!-- Reste de la page -->
+    <div class="container">
+        <div class="row my-4">
+            {% for album in albums %}
+            <div class="col-12 col-lg-4 mb-4">
+                <div class="card mb-4 mb-lg-0 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ album.title }}</h5>
+                        <p class="card-text"><small class="text-muted">Publié le {{ album.formattedCreatedAt}}</small></p>
+                    </div>
+                    {% if album.imageName %}
+                    <img src="{{ vich_uploader_asset(album,'imageFile') | imagine_filter('thumb') }}" class="card-img-bottom" alt="image à la une album">
+                    {% else %}
+                    <img src="{{ '/photos/BAINS_PAUL_ET_CHARLIE_07.jpg' | imagine_filter('thumb') }}" class="card-img-bottom"  alt="image à la une album" />
+                    {% endif %}
+                    <a class="stretched-link" href="{{ path('album.show', {id: album.id, slug: album.slug}) }}"></a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock body %}

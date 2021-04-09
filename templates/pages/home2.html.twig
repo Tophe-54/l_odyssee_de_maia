@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+<!-- Header -->
+<div id="fond_ecran" class="bg-dark">
+    <div class="black-50">
+        <div class="container">
+            <div class="row">
+                <nav class="col navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand disabled" href="{{ path('home') }}">L'Odyssée de Maïa</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link disabled" href="{{ path('home') }}">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ path('a_propos') }}">A propos</a>
+                            </li>>
+                            <li class="nav-item">
+                                <a class="nav-link" href="photos.html">Photos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reste de la page -->
+    <div class="container">
+        <div class="row my-5">
+            <div class="col">
+                <h1 class="text-white display-4">Bienvenue sur L'Odyssée de Maïa !</h1>
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div class="col">
+                <div class="card-deck">
+                    <div class="card black-50 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">A propos</h5>
+                            <p class="card-text">Qui je suis ? Qu'est-ce que la Thalasso Bain Bébé ? Toutes les réponses ici.</p>
+                            <button type="button" class="btn btn-primary">Accèder</button>
+                        </div>
+                    </div>
+                    <div class="card black-50 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Photos</h5>
+                            <p class="card-text">Découvrez la réalisation des bains à travers quelques albums photos !</p>
+                            <button type="button" class="btn btn-primary">Accèder</button>
+                        </div>
+                    </div>
+                    <div class="card black-50 text-white">
+                        <div class="card-body">
+                            <h5 class="card-title">Contact</h5>
+                            <p class="card-text">Une question ? Besoin d'un renseignement complémentaire ? Accèdez au formulaire de contact pour me transmettre votre demande.</p>
+                            <button type="button" class="btn btn-primary">Accèder</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="bg-dark">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col py-4">
+                <ul class="list-inline">
+                    <li class="list-inline-item text-light"><small>L'Odyssée de Maïa©</small></li>
+                    <li class="list-inline-item">&middot;</li>
+                    <li class="list-inline-item text-light"><small>N°SIRET 614 645 945 61465</small></li>
+                    <li class="list-inline-item">&middot;</li>
+                    <li class="list-inline-item"><a href=""><small>Conditions d'utilisation</small></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

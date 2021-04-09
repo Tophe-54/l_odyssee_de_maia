@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 mars 2021, 16:18:47
+    Author     : Tophe
+*/
+/*
+#fond_ecran, html, body {
+    height: 100%;
+    width: 100%;
+}*/
+
+#fond_ecran {
+    background: url("../photos/BAINS_PAUL_ET_CHARLIE_07.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.black-50 {
+    background: rgba(0, 0, 0, 0.5)
+}
